@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2family=Quicksand:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'Outfit', sans-serif;
+   
+}
+li, a, button{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #121314;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10px;
+
+}
+.logo{
+    flex: 1;
+    color: #121314;
+    margin-left: 50px;
+    justify-content: flex-start;
+    text-transform: uppercase;
+}
+.main{
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+
+}
+input{
+    border: 3px solid #cbcdce;
+    height: 40px;
+    width: 550px;
+    border-radius: 50px;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+.btn{
+    margin: 10px;
+    padding: 9px 25px;
+    background-color: rgb(160, 164, 170);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.btn:hover{
+    background-color: rgb(204, 200, 195);
+}
+
+
+
+.nav_links{
+    list-style: none;
+    }
+.nav_links li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #3399FF;
+}
+button{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 9px 25px;
+    background-color: rgb(74, 134, 218);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: #3399FF;
+}
+
+  
+body{
+    background: url(https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGF0dGVybiUyMHdoaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1600&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#columns{
+    column-width: 320px;
+    column-gap: 15px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 10px auto;
+}
+#columns figure{
+    background: #fefefe;
+    border: 2px solid #fefefe;
+    box-shadow: 0 1px 2px rgba(35,25,25, .4);
+    margin: 0 2px 15px;
+    padding: 15px;
+    padding-bottom: 10px;
+    transition: .4s ease-in-out;
+    display: inline-block;
+    -webkit-column-break-inside: avoid;
+}
+#columns figcaption {
+    font-weight: 300;
+    font-size: 16px;
+}
+#columns figure img{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+#columns:hover figure:not(:hover){
+    opacity: 0.3;
+}
